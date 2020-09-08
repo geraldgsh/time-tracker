@@ -18,8 +18,6 @@ React
 * Node.js
 * React
 * React-DOM
-* React-Create-App
-* Firebase
 * npm
 * CSS
 * ES6
