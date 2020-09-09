@@ -1,8 +1,9 @@
 class Api::V1::ClocksController < ApplicationController
-  before_action :set_present_user
+  skip_before_action :verify_authenticity_token
+  helper_method :present_user
 
-  def set_present_user
-    present_user = User.first  
+  def present_user
+    @present_user ||= User.first  
   end
 
   def index
@@ -18,7 +19,7 @@ class Api::V1::ClocksController < ApplicationController
   end
 
   def create
-    @clock = current_user.clocks.build(clock_params)
+    @clock = present_user.clocks.build(clock_params)
     if @clock.save
       render json: {
         code: 200
