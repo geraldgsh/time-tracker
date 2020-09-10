@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'homepage/index'
   namespace :api do
     namespace :v1 do
       resources :users, only: [:create, :index]
@@ -8,4 +9,5 @@ Rails.application.routes.draw do
       get '/user/:user_id/clock/:id', to: 'clocks#list_clock'
     end
   end
+  root 'homepage#index'
 end
