@@ -16,6 +16,15 @@ body {
   height: 100vh;
 }
 
+i {
+  color: hsl(0, 0%, 0%);
+  padding: 3px;
+}
+
+.indicator {
+  top: calc(50% - 16px / 2 + 0.5px);
+}
+
 .live-clock {
   width: 54px;
   height: 16px;
