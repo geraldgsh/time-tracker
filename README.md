@@ -4,11 +4,11 @@ React
 
 ### Snapshot
 
-![]()
+![](https://github.com/geraldgsh/time-tracker/blob/development/app/assets/images/screenshot.JPG)
 
 ### Introduction.
 
-
+A mobile app that allows employed to clock in and out. React front end uses back end API to retrieve and update information regarding their respective entry on the timesheet.
 
 ### Tools
 
@@ -22,7 +22,6 @@ React
 * CSS
 * ES6
 * Webpack
-* Jest
 
 # Ruby On Rails / React
 
