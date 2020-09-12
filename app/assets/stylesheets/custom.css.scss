@@ -1,0 +1,95 @@
+@import 'bulma/bulma';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  background-color: hsl(0, 0%, 90%);
+  height: 100%;
+}
+
+.app-content {
+  background-color: white;
+  height: 812px;
+  width: 375px;
+}
+
+.clock {
+  height: 26px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 26px / 2 - 14px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+i {
+  color: hsl(0, 0%, 0%);
+  padding: 3px;
+}
+
+.indicator {
+  top: calc(50% - 16px / 2 + 0.5px);
+}
+
+.live-clock {
+  width: 54px;
+  height: 16px;
+  left: 0;
+  top: calc(50% - 16px / 2 + 0.5px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: -0.28px;
+  color: hsl(0, 0%, 0%);
+}
+
+.name-role {
+  width: 71px;
+  height: 54px;
+  left: 16px;
+  top: 80px;
+}
+
+.role {
+  height: 36px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 36px / 2 - 9px); 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 36px;
+  color: hsl(0, 0%, 47%);
+}
+
+.name {
+  height: 24px;
+  left: 0%;
+  right: 49.3%;
+  top: calc(50% - 24px / 2 + 15px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: hsl(0, 0%, 47%);
+}
+
+.time {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+}

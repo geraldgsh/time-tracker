@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'homepage/index'
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:create, :index]
+      get 'user/:id', to: 'users#find_user'
+      resources :clocks, only: [:create, :index, :show]
+      get '/clocks/user/:id', to: 'clocks#list_clocks_by_user'
+      get '/user/:user_id/clock/:id', to: 'clocks#list_clock'
+    end
+  end
+  root 'homepage#index'
 end
