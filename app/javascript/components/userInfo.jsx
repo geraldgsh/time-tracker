@@ -6,7 +6,6 @@ function UserInfo() {
   useEffect(() => {
     axios(`http://localhost:3000/api/v1/users`)
       .then(response => {
-        console.log(response.data.data[0].name);
         setUser(response.data.data[0]);
       })
       .catch(error => {
@@ -14,11 +13,11 @@ function UserInfo() {
       });
   }, []);
   return (
-    <div className="row">
+    <div className="row mt-6">
       <div className="columns">
-        <div className="column role">
-          <h1 className="title is-2">{user.role}</h1>
-          <p>{user.name}</p>
+        <div className="column">
+          <h1 className="is-4 role">{user.role}</h1>
+          <p className="name">{user.name}</p>
         </div>
       </div>
     </div>

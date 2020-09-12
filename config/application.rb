@@ -31,13 +31,10 @@ module TimeTracker
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-    Rails.application.config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
       allow do
         origins '*'
-
-        resource '*',
-                 headers: :any,
-                 methods: %i[get post put patch delete options head]
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
   end
