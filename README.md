@@ -125,15 +125,15 @@ For API only Rails application you can remove the Stylelint config. To do so rem
 
 ### Future Features
 
-1. Persistent storage of bookmarks with Firebase DB
-2. Feature to remove bookmarks
+1. 
+2. 
 
 ### To begin
 
 1. Clone Repo by using this command 'git clone --branch development https://github.com/geraldgsh/time-tracker.git'. 
-2. 'npm install' to install dependencies
-3. Follow [this instruction]() for DB setup.
-4. Run 'rails db:migrate' to initialize
+2. Follow instruction in this [link](https://github.com/geraldgsh/time-tracker/wiki/%23-Step-02-%E2%80%94-Database-Setup) for DB setup.
+3. Run 'rails db:migrate' to initialize
+4. Run 'rails db:seed' to generate one user in DB
 5. Type `rails server` in terminal within root project folder.
 6. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -147,22 +147,19 @@ $ bundle exec rspec spec/models
 
 Finished in 0.26756 seconds (files took 2.63 seconds to load)
 7 examples, 0 failures
+```
 
 ### Wiki
 
 Checkout our [wikipage](https://github.com/geraldgsh/time-tracker/wiki) for more details. 
 
 #### Live Demo
-[Demo](https://time-tracker.netlify.com)
 
-#### Getting Started
-Clone repo and open index.html with your favorite browser.
+[Demo](http://time-tracky.herokuapp.com/)
 
 #### Prerequisites
+
 Web browser like Chrome, Mozilla or similar.
-
-### Original Project Source
-
 
 ### Github Repo
 https://github.com/geraldgsh/time-tracker
