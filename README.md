@@ -132,10 +132,11 @@ For API only Rails application you can remove the Stylelint config. To do so rem
 
 1. Clone Repo by using this command 'git clone --branch development https://github.com/geraldgsh/time-tracker.git'. 
 2. 'npm install' to install dependencies
-3. Follow [this instruction]() for DB setup.
+3. Follow [this instruction](https://github.com/geraldgsh/time-tracker/wiki/%23-Step-02-%E2%80%94-Database-Setup) for DB setup.
 4. Run 'rails db:migrate' to initialize
-5. Type `rails server` in terminal within root project folder.
-6. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Run 'rails db:seed' to generate one user in DB
+6. Type `rails server` in terminal within root project folder.
+7. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### To Test
 
@@ -147,6 +148,7 @@ $ bundle exec rspec spec/models
 
 Finished in 0.26756 seconds (files took 2.63 seconds to load)
 7 examples, 0 failures
+```
 
 ### Wiki
 
