@@ -150,7 +150,7 @@ Finished in 0.26756 seconds (files took 2.63 seconds to load)
 
 ### Wiki
 
-Checkout our [wikipage](https://github.com/geraldgsh/time-tracker/wiki) for more details. 
+Checkout our [wikipage](https://github.com/geraldgsh/time-tracker/wiki) for details on development cycles. 
 
 #### Live Demo
 
