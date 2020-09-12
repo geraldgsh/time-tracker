@@ -3,7 +3,7 @@ class Api::V1::ClocksController < ApplicationController
   helper_method :present_user
 
   def present_user
-    @present_user ||= User.first  
+    @present_user ||= User.first
   end
 
   def index

@@ -8,9 +8,9 @@ RSpec.describe 'Clocks', type: :request do
 
   describe 'POST /api/v1/clocks' do
     let(:valid_attributes) do
-      { 
-        clockin: "08:00AM",
-        clockout: "05:00PM", 
+      {
+        clockin: '08:00AM',
+        clockout: '05:00PM'
       }
     end
 
@@ -23,10 +23,10 @@ RSpec.describe 'Clocks', type: :request do
     end
     context 'when the request is invalid' do
       before do
-        post '/api/v1/clocks', params: { 
-                                          clockin: '',
-                                          clockout: "05:00 PM",
-                                        }
+        post '/api/v1/clocks', params: {
+          clockin: '',
+          clockout: '05:00 PM'
+        }
       end
 
       it 'return status code 401 before login' do

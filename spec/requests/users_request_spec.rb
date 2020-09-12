@@ -43,9 +43,7 @@ describe 'POST /api/v1/users' do
   let!(:valid_attributes) do
     { user:
       { name: 'Bruce Wayne',
-        role: 'Batman'
-      } 
-    }
+        role: 'Batman' } }
   end
 
   context 'when the request is valid' do
@@ -58,13 +56,13 @@ describe 'POST /api/v1/users' do
 
   context 'when the request is invalid' do
     before do
-      post '/api/v1/users', params: 
-      { 
-      user:
-        { 
-          name: ' ',
-          email: ' ',
-        } 
+      post '/api/v1/users', params:
+      {
+        user:
+          {
+            name: ' ',
+            email: ' '
+          }
       }
     end
 
