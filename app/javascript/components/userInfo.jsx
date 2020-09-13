@@ -4,7 +4,7 @@ import axios from 'axios';
 function UserInfo() {
   const [user, setUser] = useState([]);
   useEffect(() => {
-    axios(`http://localhost:3000/api/v1/users`)
+    axios(`/api/v1/users`)
       .then(response => {
         setUser(response.data.data[0]);
       })
